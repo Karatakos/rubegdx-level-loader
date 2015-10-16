@@ -1,2 +1,2 @@
 # rubegdxlite
-A libgdx asset loader for scenes generated from the popular Box2d editor RUBE.
+A libgdx asset loader for scenes generated from the awesome Box2d editor RUBE.
