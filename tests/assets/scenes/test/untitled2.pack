@@ -1,0 +1,26 @@
+
+images2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bird
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+pig
+  rotate: false
+  xy: 1028, 2
+  size: 433, 427
+  orig: 433, 427
+  offset: 0, 0
+  index: -1
+redbird
+  rotate: false
+  xy: 1463, 2
+  size: 308, 282
+  orig: 308, 282
+  offset: 0, 0
+  index: -1
