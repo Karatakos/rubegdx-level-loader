@@ -27,12 +27,6 @@ task dist(type: Jar) {
 
 dist.dependsOn classes
 
-eclipse {
-    project {
-        name = appName + "-tests"
-    }
-}
-
 task afterEclipseImport(description: "Post processing after project generation", group: "IDE") {
   doLast {
     def classpath = new XmlParser().parse(file(".classpath"))

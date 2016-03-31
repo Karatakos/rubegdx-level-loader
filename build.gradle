@@ -11,7 +11,7 @@ allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
 
-    version = '1.0'
+    version = '1.0.0'
     ext {
         appName = "RubeLoaderLite"
         gdxVersion = '1.6.5'
@@ -32,15 +32,19 @@ project(":tests") {
     apply plugin: "java"
 
     dependencies {
-        compile project(":loader")
+        compile project(":rubegdxlite-loader")
         compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
     }
 }
 
-project(":loader") {
+project(":rubegdxlite-loader") {
     apply plugin: "java"
+    apply plugin: "maven"
+
+    group = "com.anogaijin.rubegdxlite"
+    version = "1.0.0"
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
